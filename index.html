@@ -1,0 +1,116 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Yingfa (Ryanh).He</title>
+        <link href="css_styles.css" rel="stylesheet" type="text/css">
+        <script src="func.js"></script>
+        <script src="typed.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        
+        
+<!--        <script>-->
+<!--            document.addEventListener("DOMContentLoaded", function(){-->
+<!--                                      Typed.new(".centerText", {-->
+<!--                                                strings: ["First sentence.", "Second sentence."],-->
+<!--                                                typeSpeed: 0-->
+<!--                                                });-->
+<!--                                      });-->
+<!--        </script>-->
+        </head>
+    
+    <body id="top">
+        <div id="body">
+            <header>
+                <span class="font_color">
+                    <button id="homeBtn" class="btn" onclick="getID(this.id)">
+                        Yingfa (Ryanh).He
+                    </button>
+                </span>
+            </header>
+            
+            <div class="main ">
+                <div class="w3-animate-bottom">
+                    <h1 > <span id="centerText" class="centerText">Hi.</span></h1>
+                </div>
+                
+                <div class="resume_link">
+                    <button id="resumeBtn" class="btn" onclick="getID(this.id)">Resume</button>
+                    <div id="resume" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-contentR">
+                            <span class="close">&times;</span>
+                            <iframe src="http://docs.google.com/gview?url=http://www.ryanhhe.com/YingfaHe_Resume.pdf&embedded=true" style="width:800px; height:600px;" frameborder="0"></iframe>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="customer">
+                    <button id="aboutBtn" class="btn" onclick="getID(this.id)">About</button>
+                    <div id="about" class="modal">
+                        <div class="modal-contentL1">
+                            <span class="close">&times;</span>
+                            <p ><a id="intro1">I lived in </a><a id="keyWord1" class="keyWord" href="https://www.google.com/maps/place/Taishan,+Jiangmen,+Guangdong,+China/@21.9491124,112.1169772,9z/data=!3m1!4b1!4m5!3m4!1s0x3401d9c9f0a9ba5f:0xe575ea85bbf9146!8m2!3d22.251924!4d112.794065?hl=en" target="_blank">GuangDong</a><a id="intro2">, China.</a></p>
+                            <p id="intro14">I moved to Idaho.</p>
+                            <p id="intro3">I now live in New York.</p>
+                            <p id="intro7">I read comic books and watch a lot movies.</p>
+                            <p><a id="intro4">I sometimes take </a><a id="keyWord2" class="keyWord" href="https://www.instagram.com/ryanh.ho/" target="_blank">pictures</a><a id="intro5"> on things I see.</a></p>
+                            <p ><a id="intro8">I am graduating from </a><a id="keyWord3" class="keyWord" href="http://www.csi.cuny.edu" target="_blank">College of Staten Island</a><a id="intro9"> next month(06/2017).</a></p>
+                            <p ><a id="intro6">I am new as a </a><a id="keyWord4" class="keyWord" href="https://github.com/HoRyanh" target="_blank">coder</a><a id="intro10">, but I did some works.</a> <i class="fa fa-hand-o-right" aria-hidden="true"></i></p>
+                            <p id="intro11">I am what mensaonesses aspire to be. Effortlessly mensaoness.</p>
+                            <p ><a id="intro12">I have a more detailed </a><a id="keyWord5" class="keyWord" onclick="getID(this.id)">résumé</a><a id="intro13"> if you're into that sort of thing.<a></p>
+                        </div>
+                        <div class="modal-contentL2">
+                            <p><button id="pptBtn" class="btn" onclick="getID(this.id)">Cyber Laundering (PPT)</button></p>
+                        </div>
+                        <div class="modal-contentL3">
+                            <div id="myProgress">
+                                <div id="htmlBar">HTML CSS JS 10%</div>
+                            </div>
+                            <div id="myProgress">
+                                <div id="cppBar">C++ 10%</div>
+                            </div>
+                            <div id="myProgress">
+                                <div id="javaBar">Java 10%</div>
+                            </div>
+                            <div id="myProgress">
+                                <div id="swiftBar">Swift 10%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ppt" class="modal">
+                        <div class="modal-contentPPT">
+                            <span class="close">&times;</span>
+                            <iframe src="http://docs.google.com/gview?url=http://www.ryanhhe.com/CyberLaundering.pptx&embedded=true" style="width:800px; height:600px;" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="home_description">
+                    <ul class="social-network">
+                        <li><a href="https://www.instagram.com/ryanh.ho/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a href="https://github.com/HoRyanh" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.facebook.com/ryan.he.587" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a href="mailto:ho.ryanh@gmail.com?Subject=Hello" target="_top"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+         
+         ga('create', 'UA-98078322-1', 'auto');
+         ga('send', 'pageview');
+         
+    </script>
+</html>
+

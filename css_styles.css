@@ -1,0 +1,670 @@
+
+
+h1 {
+font-size: 160px;
+line-height: 0.93em;
+/*font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;*/
+font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+display: block;
+text-align: center;
+position: fixed;
+width: 80%;
+height: 220px;
+margin: auto;
+left: 0;
+bottom: 0;
+right:0;
+top:0;
+padding: 0;
+z-index: 4;
+color: #fff;
+letter-spacing: -1px;
+font-weight: normal;
+}
+
+
+html {
+height: 100%;
+width: 100%;
+overflow-x: hidden;
+position: relative;
+}
+
+
+body {
+padding: 0;
+text-align: center;
+margin: 0;
+width: 100%;
+height: 100%;
+-webkit-font-smoothing: antialiased;
+position:relative;
+}
+
+#body {
+width: 100%;
+min-height: 100%;
+height: auto;
+position: relative;
+background: rgba(30,30,30,1.00);
+z-index: 999999;
+margin-bottom: 480px;
+}
+
+
+
+header {
+height: 114px;
+width: 100%;
+left: 0;
+top: 0;
+position: fixed;
+z-index: 999999;
+}
+
+header span button {
+display: block;
+position: absolute;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 15px;
+top: 45px;
+left: 49px;
+color: #000;
+letter-spacing: 1.2px;
+}
+
+header span button:hover {
+border-bottom: 1px solid #000;
+}
+
+.home_description {
+display: block;
+position: absolute;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 15px;
+bottom: 35px;
+right: 49px;
+text-align: right;
+color: #fff;
+letter-spacing: 1.2px;
+z-index: 66666;
+}
+
+
+.resume_link {
+position: absolute;
+top: 40px;
+right: 50px;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 15px;
+z-index: 99999999;
+heigh: 20px;
+letter-spacing: 1.2px;
+text-align: right;
+}
+
+.resume_link a {
+color: #000;
+}
+
+
+.customer {
+position: absolute;
+bottom: 40px;
+left: 50px;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 15px;
+z-index: 999999;
+width: 380px;
+heigh: 20px;
+letter-spacing: 1.2px;
+text-align: left;
+
+-webkit-animation: fade_left 0.7s ease; /* Chrome, Safari, Opera */
+animation: fade_left 0.7s ease;
+}
+
+.customer a {
+color: #fff;
+}
+
+.customer a:hover {
+border-bottom: 1px solid #000;
+}
+
+
+.about {
+width: calc(100% - 88px);
+height: auto;
+margin: 0px auto 55px auto;
+padding-top: 325px;
+box-sizing: border-box;
+font-size: 135px;
+line-height: 1.10em;
+letter-spacing: -1px;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+text-align: left;
+position: relative;
+}
+
+.contact {
+width: 80%;
+height: 510px;
+margin: auto;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+font-size: 106px;
+line-height: 1.02em;
+letter-spacing: -0.5px;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+text-align: center;
+position: absolute;
+color: #000;
+}
+
+
+
+.contact a:hover {
+text-decoration: underline;
+}
+
+
+
+@-webkit-keyframes fade_left2 {
+0% {
+opacity: 0;
+-webkit-transform: translateX(-600px);
+transform: translateX(-600px);
+}
+
+100% {
+opacity: 1;
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+}
+
+@keyframes fade_left2 {
+0% {
+opacity: 0;
+-webkit-transform: translateX(-600px);
+-ms-transform: translateX(-600px);
+transform: translateX(-600px);
+}
+
+100% {
+opacity: 1;
+-webkit-transform: translateY(0);
+-ms-transform: translateY(0);
+transform: translateY(0);
+}
+}
+
+.about ul,
+{
+display: block;
+font-size: 18px;
+line-height: 1.5em;
+margin: 0 0 30px 0;
+padding: 0 0 0 0px;
+letter-spacing: 0.5px;
+width: 100%;
+text-align: left;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.about ul li,
+{
+letter-spacing: 0.5px;
+list-style-type: none;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+.about ul li:before,
+ {
+content: "· ";
+margin-left: -11px;
+margin-right: 3px;
+}
+
+
+@-webkit-keyframes fade_right {
+0% {
+opacity: 0;
+-webkit-transform: translateX(700px);
+transform: translateX(700px);
+}
+
+100% {
+opacity: 1;
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+}
+
+@keyframes fade_right {
+0% {
+opacity: 0;
+-webkit-transform: translateX(700px);
+-ms-transform: translateX(700px);
+transform: translateX(700px);
+}
+
+100% {
+opacity: 1;
+-webkit-transform: translateY(0);
+-ms-transform: translateY(0);
+transform: translateY(0);
+}
+}
+
+.main {
+width: 100%;
+height: 100%;
+margin: 0 auto;
+position: relative;
+}
+
+
+.font_color {
+color: rgb(255, 255, 255);
+}
+
+
+.btn{
+    background-color:rgba(30,30,30,1.00);
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    border: none;
+    font-family: "Lucida Console", Monaco, monospace;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+    background-color: rgb(140, 140, 140);
+    color: white;
+}
+
+.w3-animate-bottom{position:relative;animation:animatebottom 5s}
+@keyframes animatebottom{from{bottom:-600px;opacity:0} to{bottom:-300;opacity:1}}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+
+}
+
+.modal-contentR {
+    background-color: none;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: none;
+    width: 65%; /* Could be more or less, depending on screen size */
+    position: fixed;
+    right: 180;
+    top:-170;
+    -webkit-animation-name: slideInRight;
+    -webkit-animation-duration: 1s;
+    animation-name: slideInRight;
+    animation-duration: 1s
+}
+
+.modal-contentR p{
+    text-align:left;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: rgb(255, 255, 255);
+    
+}
+
+.modal-contentL1 {
+    background-color: rgba(30,30,30,1.00);
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: none;
+    width: 42.3%; /* Could be more or less, depending on screen size */
+    position: fixed;
+    left: 0;
+    -webkit-animation-name: slideInLeft;
+    -webkit-animation-duration: 3s;
+    animation-name: slideInLeft;
+    animation-duration: 3s
+}
+
+.modal-contentL1 p{
+    margin-left: 20;
+    text-align:left;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 23px;
+    color: rgb(255, 255, 255);
+    
+}
+.keyWord{
+/*    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+/*    font-size: 15px;*/
+/*    font-style: normal;*/
+/*    font-variant: normal;*/
+/*    font-weight: 500;*/
+/*    line-height: 23px;*/
+/*    color: rgb(255, 153, 0);*/
+    text-decoration:none;
+}
+
+.keyWord:hover{
+/*    color: rgb(255, 255, 0);*/
+    cursor: pointer;
+}
+
+.modal-contentL2 {
+    background-color: rgba(30,30,30,1.00);
+    margin: 15% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: none;
+    width: 20%; /* Could be more or less, depending on screen size */
+    position: fixed;
+    left: 565;
+    -webkit-animation-name: slideInLeft2;
+    -webkit-animation-duration: 2s;
+    animation-name: slideInLeft2;
+    animation-duration: 2s
+}
+
+.modal-contentPPT{
+    background-color: rgba(30,30,30,1.00);
+    margin: 15% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: none;
+    width: 65%; /* Could be more or less, depending on screen size */
+    position: fixed;
+    left: 200;
+    bottom: -150;
+    -webkit-animation-name: slideInBottom;
+    -webkit-animation-duration: 1.5s;
+    animation-name: slideInBottom;
+    animation-duration: 1.5s
+}
+
+.modal-contentL3 {
+    background-color: rgba(30,30,30,1.00);
+    margin: 20% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: none;
+    width: 26%; /* Could be more or less, depending on screen size */
+    position: fixed;
+    left: 855;
+    -webkit-animation-name: slideInLeft3;
+    -webkit-animation-duration: 1.5s;
+    animation-name: slideInLeft3;
+    animation-duration: 1.5s
+}
+
+#myProgress {
+    width: 100%;
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    margin: 2% auto;
+    
+}
+
+#htmlBar {
+    height: 16px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgb(74, 189, 172), rgb(74, 189, 172));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+    text-align:right;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#cppBar{
+    height: 16px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgb(252, 74, 26), rgb(252, 74, 26));
+    transition: 1.2s linear;
+    transition-property: width, background-color;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+    text-align:right;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#javaBar{
+    height: 16px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgb(247, 183, 51), rgb(247, 183, 51));
+    transition: 0.8s linear;
+    transition-property: width, background-color;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+    text-align:right;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#swiftBar{
+    height: 16px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgb(223, 220, 227), rgb(223, 220, 227));
+    transition: 1s linear;
+    transition-property: width, background-color;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+    text-align:right;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: black;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideInRight {
+    from {right: -300px; opacity: 0}
+    to {right: 180; opacity: 1}
+}
+
+@keyframes slideInRight {
+    from {right: -300px; opacity: 0}
+    to {right: 180; opacity: 1}
+}
+
+@-webkit-keyframes slideInRight2 {
+    from {right: -300px; opacity: 0}
+    to {right: 365; opacity: 1}
+}
+
+@keyframes slideInRight2 {
+    from {right: -300px; opacity: 0}
+    to {right: 365; opacity: 1}
+}
+
+@-webkit-keyframes slideInLeft {
+    from {left: -800px; opacity: 0}
+    to {left: 0; opacity: 1}
+}
+
+@keyframes slideInLeft {
+    from {left: -800px; opacity: 0}
+    to {left: 0; opacity: 1}
+}
+@-webkit-keyframes slideInLeft2 {
+    from {left: -500px; opacity: 0}
+    to {left: 565; opacity: 1}
+}
+
+@keyframes slideInLeft2 {
+    from {left: -500px; opacity: 0}
+    to {left: 565; opacity: 1}
+}
+
+@-webkit-keyframes slideInBottom {
+    from {bottom: -600px; opacity: 0}
+    to {bottom: -150; opacity: 1}
+}
+
+@keyframes slideInBottom {
+    from {bottom: -600px; opacity: 0}
+    to {bottom: -150; opacity: 1}
+}
+
+@-webkit-keyframes slideInLeft3 {
+    from {left: 0px; opacity: 0}
+    to {left: 860; opacity: 1}
+}
+
+@keyframes slideInLeft3 {
+    from {left: 0px; opacity: 0}
+    to {left: 860; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+/* for the animated blinking cursor */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.typed-fade-out{
+    opacity: 0;
+    animation: 0;
+    transition: opacity .25s;
+}
+
+
+/*=========================
+ Icons
+ ================= */
+
+/* social icons */
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left:0 !important;
+    padding: 0;
+}
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+ul.social-network li a i{
+    color:white;
+}
+
+ul.social-network li a i:hover {
+    animation: bounce 1s;
+    color: rgb(58, 81, 153);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
