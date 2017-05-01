@@ -3,8 +3,7 @@
 h1 {
 font-size: 160px;
 line-height: 0.93em;
-/*font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;*/
-font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+font-family: 'Source Code Pro', monospace;
 display: block;
 text-align: center;
 position: fixed;
@@ -286,7 +285,8 @@ color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     border-radius: 12px;
     border: none;
-    font-family: "Lucida Console", Monaco, monospace;
+/*    font-family: "Lucida Console", Monaco, monospace;*/
+    font-family: 'Source Code Pro', monospace;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
@@ -356,7 +356,8 @@ color: rgb(255, 255, 255);
 .modal-contentL1 p{
     margin-left: 20;
     text-align:left;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+/*    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+    font-family: 'Source Code Pro', monospace;
     font-size: 15px;
     font-style: normal;
     font-variant: normal;
@@ -457,8 +458,9 @@ color: rgb(255, 255, 255);
     transition-property: width, background-color;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
     text-align:right;
-    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
-    font-size: 14px;
+/*    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;*/
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
@@ -474,8 +476,9 @@ color: rgb(255, 255, 255);
     transition-property: width, background-color;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
     text-align:right;
-    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
-    font-size: 14px;
+/*    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;*/
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
@@ -491,8 +494,9 @@ color: rgb(255, 255, 255);
     transition-property: width, background-color;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
     text-align:right;
-    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
-    font-size: 14px;
+/*    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;*/
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
@@ -508,8 +512,9 @@ color: rgb(255, 255, 255);
     transition-property: width, background-color;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
     text-align:right;
-    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
-    font-size: 14px;
+/*    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;*/
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;

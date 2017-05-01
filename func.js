@@ -208,7 +208,7 @@ function WordShuffler(holder,opt){
 var once=false; var introIDs = ["intro1","intro2","intro3","intro4","intro5","intro6","intro7","intro8",
                                 "intro9", "intro10", "intro11", "intro12", "intro13", "intro14"];
 var keyWordIDs = ["keyWord1", "keyWord2", "keyWord3", "keyWord4", "keyWord5"];
-var cenWords = ["Hi.", "Welcome.","Hey.","Stop.","LOL.","Ok.","One.","Last.","Hit.","Enjoy."];
+var cenWords = ["Hi.", "Code,", "Movies,", "and Cate,", "That's what I live off.", "Enjoy."];
 var ranColorSet = [
                    '#f44336','#e91e63','#9c27b0',
                    '#673ab7','#3f51b5','#2196f3',
@@ -221,9 +221,7 @@ var ranColorSet = [
 var slideIndex = 1;
 function getID(thisID){
     var modal; var span; var cenText; var randNum;
-    if(thisID == "contactBtn"){
-        
-        
+    if(thisID == "contactBtn"){//Under construction
         
     }
     else if(thisID == "aboutBtn"){
@@ -264,6 +262,7 @@ function getID(thisID){
         span = document.getElementsByClassName("close")[0];
     }
     else if(thisID ==  "homeBtn"){
+        //Change center text.
         cenText = document.getElementById("centerText");
         if(cenText.textContent == "Enjoy."){
             randNum = Math.floor( Math.random() * ranColorSet.length );
@@ -278,8 +277,10 @@ function getID(thisID){
             randNum = Math.floor( Math.random() * ranColorSet.length );
             cenText.style.color = ranColorSet[randNum];
             for(var i=0; i<cenWords.length;i++){
+                if(i==3){cenText.style.fontSize = "65px";}
+                else{cenText.style.fontSize = "120px";}
+                
                 if(cenText.textContent == cenWords[i]){
-//                    document.getElementById("centerText").innerHTML = cenWords[i+1];
                     Typed.new(".centerText", {
                               strings: [cenWords[i+1]],
                               contentType: 'text', // or 'text'
