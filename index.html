@@ -11,18 +11,10 @@
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         
-        
-<!--        <script>-->
-<!--            document.addEventListener("DOMContentLoaded", function(){-->
-<!--                                      Typed.new(".centerText", {-->
-<!--                                                strings: ["First sentence.", "Second sentence."],-->
-<!--                                                typeSpeed: 0-->
-<!--                                                });-->
-<!--                                      });-->
-<!--        </script>-->
         </head>
     
     <body id="top">
+        
         <div id="body">
             <header>
                 <span class="font_color">
@@ -44,7 +36,6 @@
                         <div class="modal-contentR">
                             <span class="close">&times;</span>
                             <iframe src="http://docs.google.com/gview?url=http://www.ryanhhe.com/YingfaHe_Resume.pdf&embedded=true" style="width:800px; height:600px;" frameborder="0"></iframe>
-                            
                         </div>
                     </div>
                 </div>
@@ -65,7 +56,16 @@
                             <p ><a id="intro12">I have a more detailed </a><a id="keyWord5" class="keyWord" onclick="getID(this.id)">résumé</a><a id="intro13"> if you're into that sort of thing.<a></p>
                         </div>
                         <div class="modal-contentL2">
-                            <p><button id="pptBtn" class="btn" onclick="getID(this.id)">Cyber Laundering (PPT)</button></p>
+                            <p><ul class="L2Btn">
+                                <li><button id="pptBtn" class="btn" onclick="getID(this.id)">Cyber Laundering (PPT)</button></li>
+                                <li><a href="https://www.dropbox.com/s/x5nnmpn8ezlppuc/Cyber%20Laundering.pptx?dl=0" target="_blank"><i class="fa fa-dropbox fa-2x" aria-hidden="true"></i></a></li>
+                            </ul></p>
+                            
+                            <p><ul class="L2Btn">
+                                <li><button id="classSchedulingBtn" class="btn" onclick="getID(this.id)">
+                                    Class-Scheduling (Java)</button></li>
+                                <li><a href="https://github.com/HoRyanh/Class-Scheduling" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                            </ul></p>
                         </div>
                         <div class="modal-contentL3">
                             <div id="myProgress">
@@ -86,6 +86,58 @@
                         <div class="modal-contentPPT">
                             <span class="close">&times;</span>
                             <iframe src="http://docs.google.com/gview?url=http://www.ryanhhe.com/CyberLaundering.pptx&embedded=true" style="width:800px; height:600px;" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    <div id="classScheduling" class="modal">
+                        <div class="modal-contentCS">
+                            <div class="w3-content w3-display-container">
+                                <div class="w3-display-container mySlides">
+                                    <img src="http://ryanhhe.com/classSchedulingImg/mainPage.jpg" style="width:100%">
+                                        <div class="w3-display-topleft w3-medium w3-container w3-padding-small fontSet">
+                                            Main Page.
+                                        </div>
+                                </div>
+                                <div class="w3-display-container mySlides">
+                                    <img src="http://ryanhhe.com/classSchedulingImg/subject.jpg" style="width:100%">
+                                        <div class="w3-display-topleft w3-medium w3-container w3-padding-small fontSet">
+                                            Subject Selected.
+                                        </div>
+                                </div>
+                                <div class="w3-display-container mySlides">
+                                    <img src="http://ryanhhe.com/classSchedulingImg/classesSelected.jpg" style="width:100%">
+                                        <div class="w3-display-topleft w3-medium w3-container w3-padding-small fontSet">
+                                            Classes Selected.
+                                        </div>
+                                </div>
+                                <div class="w3-display-container mySlides">
+                                    <img src="http://ryanhhe.com/classSchedulingImg/schedule1.jpg" style="width:100%">
+                                        <div class="w3-display-topleft w3-medium w3-container w3-padding-small fontSet">
+                                            Schedule #1.
+                                        </div>
+                                </div>
+                                <div class="w3-display-container mySlides">
+                                    <img src="http://ryanhhe.com/classSchedulingImg/schedule2.jpg" style="width:100%">
+                                        <div class="w3-display-topleft w3-medium w3-container w3-padding-small fontSet">
+                                            Schedule #2.
+                                        </div>
+                                </div>
+                                <div class="w3-display-container mySlides">
+                                    <img src="http://ryanhhe.com/classSchedulingImg/login.jpg" style="width:100%">
+                                        <div class="w3-display-topleft w3-medium w3-container w3-padding-small fontSet">
+                                            Log In Page.
+                                        </div>
+                                </div>
+                                <div class="w3-display-container mySlides">
+                                    <img src="http://ryanhhe.com/classSchedulingImg/comment.jpg" style="width:100%">
+                                        <div class="w3-display-topleft w3-medium w3-container w3-padding-small fontSet">
+                                            Comment Page.
+                                        </div>
+                                </div>
+                                <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                                <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+<!--                                <a class="w3-display-topright" href="https://github.com/HoRyanh/Class-Scheduling" target="_blank"><i class="fa fa-github fa-2x csGitLink" aria-hidden="true"></i></a>-->
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>

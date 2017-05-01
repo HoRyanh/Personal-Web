@@ -209,8 +209,18 @@ var once=false; var introIDs = ["intro1","intro2","intro3","intro4","intro5","in
                                 "intro9", "intro10", "intro11", "intro12", "intro13", "intro14"];
 var keyWordIDs = ["keyWord1", "keyWord2", "keyWord3", "keyWord4", "keyWord5"];
 var cenWords = ["Hi.", "Welcome.","Hey.","Stop.","LOL.","Ok.","One.","Last.","Hit.","Enjoy."];
+var ranColorSet = [
+                   '#f44336','#e91e63','#9c27b0',
+                   '#673ab7','#3f51b5','#2196f3',
+                   '#03a9f4','#00bcd4','#009688',
+                   '#4caf50','#8bc34a','#cddc39',
+                   '#ffeb3b','#ffc107','#ff9800',
+                   '#ff5722','#795548','#9e9e9e',
+                   '#607d8b'
+                   ];
+var slideIndex = 1;
 function getID(thisID){
-    var modal; var span; var cenText;
+    var modal; var span; var cenText; var randNum;
     if(thisID == "contactBtn"){
         
         
@@ -245,6 +255,7 @@ function getID(thisID){
         cppMove();
         javaMove();
         swiftMove();
+        showDivs(slideIndex);
     }
     else if(thisID == "resumeBtn" || thisID == "keyWord5"){
         modal = document.getElementById("resume");
@@ -253,9 +264,10 @@ function getID(thisID){
         span = document.getElementsByClassName("close")[0];
     }
     else if(thisID ==  "homeBtn"){
-        cenText = document.getElementById("centerText").textContent;
-        if(cenText == "Enjoy."){
-//            document.getElementById("centerText").innerHTML = "Enjoy.";
+        cenText = document.getElementById("centerText");
+        if(cenText.textContent == "Enjoy."){
+            randNum = Math.floor( Math.random() * ranColorSet.length );
+            cenText.style.color = ranColorSet[randNum];
             Typed.new(".centerText", {
                       strings: ["Enjoy."],
                       contentType: 'html', // or 'text'
@@ -263,8 +275,10 @@ function getID(thisID){
                       });
         }
         else {
+            randNum = Math.floor( Math.random() * ranColorSet.length );
+            cenText.style.color = ranColorSet[randNum];
             for(var i=0; i<cenWords.length;i++){
-                if(cenText == cenWords[i]){
+                if(cenText.textContent == cenWords[i]){
 //                    document.getElementById("centerText").innerHTML = cenWords[i+1];
                     Typed.new(".centerText", {
                               strings: [cenWords[i+1]],
@@ -285,13 +299,19 @@ function getID(thisID){
         modal.style.display = "block";
         span = document.getElementsByClassName("close")[2];
     }
+    else if(thisID == "classSchedulingBtn"){
+        modal = document.getElementById("classScheduling");
+        modal.style.display = "block";
+        span = document.getElementsByClassName("close")[4];
+    }
     
     
     
     // When the user clicks on <span> (x), close the modal
+    if(thisID != "classSchedulingBtn"){
     span.onclick = function() {
         modal.style.display = "none";
-    }
+    }}
     
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
@@ -303,6 +323,7 @@ function getID(thisID){
     
 }
 
+//Skills moves
 function htmlMove() {
     var elem = document.getElementById("htmlBar");
     var width = 10;
@@ -358,6 +379,23 @@ function swiftMove() {
             elem.innerHTML = "Swift " + width * 1  + '%';
         }
     }
+}
+
+//Slideshow
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
 }
 
 
